@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class MegaManController : MonoBehaviour
+public class Controller : MonoBehaviour
 {
     [Header("Movimento")]
     public float moveSpeed = 5f;
