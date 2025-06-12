@@ -8,13 +8,13 @@ public class GameStateManager : MonoBehaviour
 
     public void GameOver()
     {
-        Time.timeScale = 0f; // pausa o jogo
+        Time.timeScale = 0f; 
         telaGameOver.SetActive(true);
     }
 
     public void Vitoria()
     {
-        Time.timeScale = 0f; // pausa o jogo
+        Time.timeScale = 0f; 
         telaVitoria.SetActive(true);
     }
 
@@ -27,6 +27,6 @@ public class GameStateManager : MonoBehaviour
     public void VoltarMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("MenuScene"); // Altere para o nome da sua cena de menu
+        SceneManager.LoadScene("Menu 1"); 
     }
 }

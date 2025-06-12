@@ -4,14 +4,25 @@ public class DoorInteraction : MonoBehaviour
 {
     private DoorController nearbyDoor;
 
+    public GameObject telaVitoria;  
+
     void Update()
     {
         if (nearbyDoor != null && nearbyDoor.IsOpen())
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
-                transform.position = nearbyDoor.GetTeleportDestination();
-                Debug.Log("Teleportado para " + nearbyDoor.GetTeleportDestination());
+                if (nearbyDoor.isVictoryDoor)
+                {
+                    Debug.Log("Vitória!");
+                    telaVitoria.SetActive(true);
+                    Time.timeScale = 0f; 
+                }
+                else
+                {
+                    transform.position = nearbyDoor.GetTeleportDestination();
+                    Debug.Log("Teleportado para " + nearbyDoor.GetTeleportDestination());
+                }
             }
         }
     }

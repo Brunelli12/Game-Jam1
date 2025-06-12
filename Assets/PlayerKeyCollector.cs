@@ -16,14 +16,14 @@ public class PlayerKeyCollector : MonoBehaviour
                 collectedKeyIDs.Add(key.keyID);
                 Debug.Log("Pegou a chave " + key.keyID);
 
-                // Verifica todas as portas da cena
+                
                 DoorController[] doors = FindObjectsOfType<DoorController>();
                 foreach (DoorController door in doors)
                 {
                     door.TryOpenDoor(this);
                 }
 
-                Destroy(keyNearby);
+                Destroy(keyNearby); 
                 keyNearby = null;
             }
         }

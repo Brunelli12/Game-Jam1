@@ -2,9 +2,11 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
-    public int[] requiredKeyIDs; // Ex: [1, 2]
-    public Vector3 teleportDestination; // Coordenadas de destino após abrir e interagir
+    public int[] requiredKeyIDs;
+    public Vector3 teleportDestination;
     private bool isOpen = false;
+
+    public bool isVictoryDoor = false;  
 
     public void TryOpenDoor(PlayerKeyCollector player)
     {
@@ -13,7 +15,7 @@ public class DoorController : MonoBehaviour
         foreach (int id in requiredKeyIDs)
         {
             if (!player.HasKey(id))
-                return; // Falta uma chave
+                return;
         }
 
         OpenDoor();
@@ -23,7 +25,7 @@ public class DoorController : MonoBehaviour
     {
         isOpen = true;
         Debug.Log("Porta aberta!");
-        // Aqui você pode desativar a porta ou ativar uma animação
+        
     }
 
     public bool IsOpen()
@@ -36,3 +38,4 @@ public class DoorController : MonoBehaviour
         return teleportDestination;
     }
 }
+
