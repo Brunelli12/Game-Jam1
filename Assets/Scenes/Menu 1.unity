@@ -134,7 +134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &88008906
 RectTransform:
   m_ObjectHideFlags: 0
@@ -184,8 +184,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d54f7824466bd8344b6b6a3e5308515a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MenuPrincipal: {fileID: 1873855078}
-  ComoJogarPanel: {fileID: 88008905}
+  menuPrincipal: {fileID: 1873855078}
+  comoJogarPainel: {fileID: 863753077}
 --- !u!4 &241224140
 Transform:
   m_ObjectHideFlags: 0
@@ -573,7 +573,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &863753078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -586,8 +586,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d54f7824466bd8344b6b6a3e5308515a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MenuPrincipal: {fileID: 0}
-  ComoJogarPanel: {fileID: 0}
+  menuPrincipal: {fileID: 0}
+  comoJogarPainel: {fileID: 0}
 --- !u!114 &863753079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -792,8 +792,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d54f7824466bd8344b6b6a3e5308515a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MenuPrincipal: {fileID: 0}
-  ComoJogarPanel: {fileID: 0}
+  menuPrincipal: {fileID: 0}
+  comoJogarPainel: {fileID: 0}
 --- !u!1 &983058381
 GameObject:
   m_ObjectHideFlags: 0
@@ -1313,8 +1313,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d54f7824466bd8344b6b6a3e5308515a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MenuPrincipal: {fileID: 0}
-  ComoJogarPanel: {fileID: 0}
+  menuPrincipal: {fileID: 0}
+  comoJogarPainel: {fileID: 0}
 --- !u!1 &1854941228
 GameObject:
   m_ObjectHideFlags: 0
